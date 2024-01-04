@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.projects{
+    min-height: auto;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.projects .heading{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+    color: #0ef;
+}
+.projects .projects-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.projects-row .projects-column{
+    flex: 1 1 40rem;
+}
+.mini-heading{
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.title, .description, .role, .software {
+    font-size: 17px;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+.title{
+    margin-top: -0.5rem;
+}
+.title-para, .desc-para, .role-para, .soft-para{
+    font-size: 15px;
+    text-align: justify;
+}
+.projects-box{
+    position: relative;
+    padding: 1rem;
+    border: .2rem solid #0ef;
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.projects-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color:#112e42;;
+    z-index: -1;
+    transition: .5s;
+}
+.projects-box:hover::before{
+    width: 100%;
+}
